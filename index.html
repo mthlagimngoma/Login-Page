@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Page || Register Page</title>
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="form">
+        <form action="" class="register-form">
+          <input type="text" placeholder="user name" />
+          <input type="text" placeholder="password" />
+          <input type="text" placeholder="email id" />
+          <button>Create</button>
+          <br />
+          <p class="message">Alread Registered User? <a href="#">Login</a></p>
+        </form>
+        <!--login form-->
+        <form action="" class="logi-form">
+          <input type="text" placeholder="username" />
+          <input type="password" placeholder="password" />
+          <br />
+          <button>Login</button>
+          <p class="message">Not Registered User? <a href="#">Register</a></p>
+        </form>
+      </div>
+    </div>
+
+    <!--Write a qjuery function-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js
+"></script>
+
+    <!--jAVASCRIPT CODE-->
+    <script>
+      $(".message a").click(function () {
+        $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
+      });
+    </script>
+  </body>
+</html>
